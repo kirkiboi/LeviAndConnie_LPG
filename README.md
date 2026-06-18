@@ -18,11 +18,20 @@ The L&C Smart Retail Management System is a comprehensive web application aimed 
 - **Database:** MySQL
 - **Frontend:** Blade Templates, Vanilla CSS, Vanilla JavaScript
 
+## Requirements
+
+Before running the project, make sure you have:
+
+- PHP 8.3+
+- Composer
+- Node.js and npm
+- MySQL
+  
 ## Setup Instructions
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/landc-smart-retail.git
+   git clone https://github.com/kirkiboi/LeviAndConnie_LPG.git
    cd landc-smart-retail
    ```
 
