@@ -1,9 +1,9 @@
 # L&C Smart Retail Management System
 
-## Business Context
-L&C Smart Retail is a local retail business specializing in LPG tanks, refill services, tank exchanges, delivery services, and LPG accessories. This system was developed to automate and centralize the business's core operations.
+### Business Context
+L&C LPG Center is a local retail business specializing in LPG tanks, refill services, tank exchanges, delivery services, and LPG accessories. This system was developed to automate and centralize the business's core operations.
 
-## Purpose & Objectives
+### Purpose & Objectives
 The L&C Smart Retail Management System is a comprehensive web application aimed at improving transaction processing, inventory management, employee monitoring, and report generation, while significantly reducing manual errors.
 
 **Core Features Include:**
@@ -13,12 +13,12 @@ The L&C Smart Retail Management System is a comprehensive web application aimed 
 - **Reporting Dashboard:** Instant visual metrics for daily sales, order count, active employees, and low-stock items.
 - **Secure Authentication:** Custom session management and role-based access control (Owner vs. Employee).
 
-## Technology Stack
+### Technology Stack
 - **Backend:** PHP 8.3, Laravel 13.x
 - **Database:** MySQL
 - **Frontend:** Blade Templates, Vanilla CSS, Vanilla JavaScript
 
-## Requirements
+### Requirements
 
 Before running the project, make sure you have:
 
@@ -27,7 +27,7 @@ Before running the project, make sure you have:
 - Node.js and npm
 - MySQL
   
-## Setup Instructions
+### Setup Instructions
 
 1. **Clone the repository:**
    ```bash
@@ -64,11 +64,11 @@ Before running the project, make sure you have:
    ```
    Visit `http://localhost:8000` in your browser.
 
-## Technical Highlights
+### Technical Highlights
 - **Pessimistic Locking (`lockForUpdate`):** Implemented in the POS controller to prevent stock overselling during concurrent transactions.
 - **Database Transactions:** Used extensively to guarantee data consistency across dependent records (e.g., Inventory Restock creating Stock Movements and Expenses atomically).
 - **Optimized Queries:** Removed N+1 query loops in the reporting dashboard by utilizing Eloquent aggregate functions (`groupBy`, `selectRaw`).
-- **Responsive UI:** Custom CSS providing a lightweight, fast, and mobile-friendly interface without the overhead of heavy frontend frameworks.
 
-## License
-The L&C Smart Retail Management System is open-sourced software.
+### License
+
+This project was developed for academic and portfolio purposes. All rights reserved. Unauthorized copying, modification, or distribution of this source code is prohibited without permission from the author.
