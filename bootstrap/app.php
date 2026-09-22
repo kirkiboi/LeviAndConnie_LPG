@@ -11,11 +11,13 @@ return Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
     ->withMiddleware(function (Middleware $middleware): void {
-        $middleware->alias([
-            'auth.employee' => \App\Http\Middleware\AuthMiddleware::class,
-            'auth.owner'    => \App\Http\Middleware\OwnerMiddleware::class,
-        ]);
-    })
+    $middleware->trustProxies(at: '*');
+
+    $middleware->alias([
+        'auth.employee' => \App\Http\Middleware\AuthMiddleware::class,
+        'auth.owner'    => \App\Http\Middleware\OwnerMiddleware::class,
+    ]);
+})
     ->withExceptions(function (Exceptions $exceptions): void {
         //
     })->create();
